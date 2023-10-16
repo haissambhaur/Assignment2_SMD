@@ -39,13 +39,14 @@
         android:textColor="#5C5F63"/>
 
     <EditText
+        android:id="@+id/name"
         android:layout_width="375dp"
         android:layout_height="42dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="180dp"
         android:paddingLeft="15dp"
         android:hint="Enter name"
-        android:inputType="textEmailAddress"
+        android:inputType="text"
         android:background="@drawable/rounded_text_background" />
 
     <TextView
@@ -61,6 +62,7 @@
         android:textColor="#5C5F63"/>
 
     <EditText
+        android:id="@+id/email"
         android:layout_width="375dp"
         android:layout_height="42dp"
         android:layout_marginStart="15dp"
@@ -76,19 +78,20 @@
         android:layout_marginTop="315dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
-        android:text="Conatct Number"
+        android:text="Contact Number"
         android:textSize="15dp"
         android:textStyle="bold"
         android:textColor="#5C5F63"/>
 
     <EditText
+        android:id="@+id/phoneno"
         android:layout_width="375dp"
         android:layout_height="42dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="340dp"
         android:paddingLeft="15dp"
         android:hint="Enter contact number"
-        android:inputType="textEmailAddress"
+        android:inputType="phone"
         android:background="@drawable/rounded_text_background" />
     <TextView
         android:layout_width="wrap_content"
