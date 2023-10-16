@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".screen1">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/scrlView_sc10"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/spotitimg"
+                android:layout_width="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="120dp"
+                android:elevation="2dp"
+                android:src="@drawable/baseline_account_circle_24" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/baseline_edit_24"
+                android:layout_marginStart="370dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/edit_btn_sc10"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="#757575"
+                android:id="@+id/Logintxt"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daud"
+                android:textStyle="bold"
+                android:textSize="26dp"
+                android:textColor="#515050"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="230dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Islamabad"
+                android:textSize="18dp"
+                android:textColor="#515050"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="270dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18 items posted"
+                android:textSize="18dp"
+                android:textColor="#515050"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="270dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 items posted"
+                android:textSize="18dp"
+                android:textColor="#515050"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="270dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/item_grey_rectangle"
+                android:layout_marginTop="80dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items You've Rented"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="325dp"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="360dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:foregroundGravity="center_vertical"
+                android:scrollbars="none">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="175dp"
+                    >
+
+                    <include layout="@layout/activity_screen5_your_items"
+                        android:layout_height="170dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="15dp"/>
+                    <include layout="@layout/activity_screen5_your_items"
+                        android:layout_height="170dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="255dp"/>
+                    <include layout="@layout/activity_screen5_your_items"
+                        android:layout_height="170dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="495dp"/>
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent items"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="555dp"/>
+            <include layout="@layout/activity_screen5_recent_items"
+                android:layout_width="182dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="600dp"
+                android:layout_marginStart="15dp"/>
+            <include layout="@layout/activity_screen5_recent_items"
+                android:layout_width="182dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="600dp"
+                android:layout_marginStart="210dp"/>
+            <include layout="@layout/activity_screen5_recent_items"
+                android:layout_width="182dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="790dp"
+                android:layout_marginStart="15dp"/>
+            <include layout="@layout/activity_screen5_recent_items"
+                android:layout_width="182dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="790dp"
+                android:layout_marginStart="210dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

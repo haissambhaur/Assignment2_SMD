@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".screen1">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navbar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find exactly what you need!"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:id="@+id/Logintxt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_width="375dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="30dp"
+        android:hint="Search"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/rounded_text_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Recent Searches"
+        android:textSize="16dp"
+        android:textColor="#5C5F63"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="195dp"
+        android:src="@drawable/baseline_arrow_forward_ios_24"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="165dp"
+        android:id="@+id/frwd_btn_sc6"
+        android:src="@drawable/baseline_arrow_forward_ios_24"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="225dp"
+        android:src="@drawable/baseline_arrow_forward_ios_24"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="305dp"
+        android:src="@drawable/baseline_arrow_forward_ios_24"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="335dp"
+        android:src="@drawable/baseline_arrow_forward_ios_24"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="365dp"
+        android:src="@drawable/baseline_arrow_forward_ios_24"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="395dp"
+        android:src="@drawable/baseline_arrow_forward_ios_24"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Item Number One"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#5C5F63"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Item Number Two"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#5C5F63"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Item Number Three"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#5C5F63"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Popular Searches"
+        android:textSize="15dp"
+        android:textColor="#5C5F63"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Item Number One"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#5C5F63"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Item Number Two"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#5C5F63"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Item Number Three"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#5C5F63"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Item Number Four"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#5C5F63"/>
+
+</RelativeLayout>

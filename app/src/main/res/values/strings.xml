@@ -1,0 +1,17 @@
+<resources>
+    <string-array name="spinner_items">
+        <item>Best Match</item>
+        <item>Low to High</item>
+        <item>High to Low</item>
+    </string-array>
+    <string-array name="city_items">
+        <item>city 1</item>
+        <item>city 2</item>
+        <item>city 3</item>
+    </string-array>
+    <string-array name="country_items">
+        <item>Country 1</item>
+        <item>Country 2</item>
+        <item>Country 3</item>
+    </string-array>
+</resources>

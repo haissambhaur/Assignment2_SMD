@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".screen1">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/scrl_View_sc5"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome,"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="#757575"
+                android:id="@+id/Logintxt"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daud"
+                android:autoLink="all"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#EF8305"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured items"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="95dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:foregroundGravity="center_vertical"
+                android:scrollbars="none">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="175dp"
+                    >
+                    <include layout="@layout/activity_screen5_item"
+                        android:layout_height="170dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="15dp"
+                        android:id="@+id/item_1_sc5"
+                        >
+                    </include>
+                    <include layout="@layout/activity_screen5_item"
+                        android:layout_height="170dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="255dp"/>
+                    <include layout="@layout/activity_screen5_item"
+                        android:layout_height="170dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="495dp"/>
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your items"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="325dp"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="360dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:foregroundGravity="center_vertical"
+                android:scrollbars="none">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="175dp"
+                    >
+
+                    <include layout="@layout/activity_screen5_your_items"
+                        android:layout_height="170dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="15dp"/>
+                    <include layout="@layout/activity_screen5_your_items"
+                        android:layout_height="170dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="255dp"/>
+                    <include layout="@layout/activity_screen5_your_items"
+                        android:layout_height="170dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="495dp"/>
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent items"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="555dp"/>
+            <include layout="@layout/activity_screen5_recent_items"
+                android:layout_width="182dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="600dp"
+                android:layout_marginStart="15dp"/>
+            <include layout="@layout/activity_screen5_recent_items"
+                android:layout_width="182dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="600dp"
+                android:layout_marginStart="210dp"/>
+            <include layout="@layout/activity_screen5_recent_items"
+                android:layout_width="182dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="790dp"
+                android:layout_marginStart="15dp"/>
+            <include layout="@layout/activity_screen5_recent_items"
+                android:layout_width="182dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="790dp"
+                android:layout_marginStart="210dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
