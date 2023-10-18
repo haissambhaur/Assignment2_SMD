@@ -1,5 +1,8 @@
 package com.example.assignment_1;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,9 +15,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -22,27 +22,31 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.ktx.Firebase;
 
-    public class screen3 extends AppCompatActivity {
-        FirebaseAuth mAuth;
-        EditText email;
-        EditText password;
-        EditText phoneno;
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_screen3);// Find the TextView for "Sign Up"
-            DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("users");
+public class screen3 extends AppCompatActivity {
+    FirebaseAuth mAuth;
+    EditText email;
+    EditText password;
+    EditText name;
+    EditText phoneno;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_screen3);// Find the TextView for "Sign Up"
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("users");
 
-            mAuth= FirebaseAuth.getInstance();
-            email = findViewById(R.id.email);
-            password = findViewById(R.id.name);
-            phoneno = findViewById(R.id.phoneno);
+        mAuth= FirebaseAuth.getInstance();
+        email = findViewById(R.id.email);
+        name=findViewById(R.id.name);
+        password=findViewById(R.id.password);
+        phoneno=findViewById(R.id.phoneno);
 
-            @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView loginTextView = findViewById(R.id.login_btn_sc3);
-            loginTextView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView loginTextView = findViewById(R.id.login_btn_sc3);
+        loginTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
                 Intent intent = new Intent(screen3.this, screen1.class);
                 startActivity(intent);
             }
@@ -62,7 +66,6 @@ import com.google.firebase.database.FirebaseDatabase;
         country_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                // Get the selected item
                 String selectedItem = parentView.getItemAtPosition(position).toString();
 
             }
@@ -107,9 +110,10 @@ import com.google.firebase.database.FirebaseDatabase;
                                     String userId = mAuth.getCurrentUser().getUid();
                                     String userCountry = country_spinner.getSelectedItem().toString();
                                     String userCity = city_spinner.getSelectedItem().toString();
+                                    String userName = name.getText().toString();
                                     String userPhone = phoneno.getText().toString();
 
-                                    User user = new User(userCountry, userCity, userPhone);
+                                    User user = new User(userCountry, userCity, userPhone,userName);
 
                                     databaseReference.child(userId).setValue(user);
 

@@ -136,6 +136,29 @@
         android:paddingLeft="15dp"
         android:background="@drawable/rounded_text_background"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="555dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Password"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#5C5F63"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="375dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="580dp"
+        android:paddingLeft="15dp"
+        android:hint="Enter password"
+        android:inputType="text"
+        android:background="@drawable/rounded_text_background" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:textAllCaps="false"
         android:text="Sign Up"
@@ -143,7 +166,7 @@
         android:layout_width="380dp"
         android:layout_height="45dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="575dp"
+        android:layout_marginTop="630dp"
         android:textColor="#ffffff"
         android:id="@+id/signup_btn_sc3"
         android:background="@drawable/button_background_orange"/>
@@ -156,7 +179,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="#5C5F63"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="20dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"/>
 </RelativeLayout>
