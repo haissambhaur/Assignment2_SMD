@@ -147,6 +147,7 @@
         android:id="@+id/postItem_btn_sc12"
         android:background="@drawable/button_background_orange"/>
     <ImageView
+
         android:id="@+id/uploadphoto"
         android:layout_width="160dp"
         android:layout_height="90dp"

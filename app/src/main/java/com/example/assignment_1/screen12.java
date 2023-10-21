@@ -69,6 +69,7 @@ public class screen12 extends AppCompatActivity {
                 intent.setType("image/*");
                 startActivityForResult(intent, DP_REQUEST_CODE);
             }
+
         });
 
 
