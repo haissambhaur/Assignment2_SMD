@@ -10,8 +10,8 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,7 +22,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
 
 public class screen6 extends AppCompatActivity {
@@ -140,11 +140,29 @@ public class screen6 extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                searchAdapter.getFilter().filter(newText);
+                FilterList(newText);
                 return true;
             }
         });
 
         return true;
+    }
+
+    private void FilterList(String Text) {
+//        ArrayList<Items> filteredList = new ArrayList<>();
+//        for(Items item:itemList ){
+//            if(item.getItemname().toLowerCase().contains(Text.toLowerCase())){
+//                filteredList.add(item);
+//            }
+//        }
+//        if(filteredList.isEmpty())
+//        {
+//            Toast.makeText(this, "No data found", Toast.LENGTH_SHORT).show();
+//        }
+//        else {
+//            MyAdapter.set
+//
+//        }
+        searchAdapter.getFilter().filter(Text);
     }
 }
