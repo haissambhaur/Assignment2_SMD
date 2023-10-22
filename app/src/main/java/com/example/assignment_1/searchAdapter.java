@@ -1,6 +1,5 @@
 package com.example.assignment_1;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,6 +64,7 @@ public class searchAdapter extends RecyclerView.Adapter<searchAdapter.ViewHolder
 
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
+//                originalList = (ArrayList<Items>) FilterResults.values;
                 notifyDataSetChanged();
             }
         };

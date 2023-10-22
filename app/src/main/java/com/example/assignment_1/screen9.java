@@ -1,12 +1,12 @@
 package com.example.assignment_1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class screen9 extends AppCompatActivity {
 
@@ -62,5 +62,6 @@ public class screen9 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

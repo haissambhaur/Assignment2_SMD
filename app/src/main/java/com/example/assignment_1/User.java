@@ -6,11 +6,11 @@ public class User {
     private String name;
     private String phone;
 
-    public User() {
+    public User(String userCountry, String userCity, String userPhone, String userName) {
         // Default constructor required for DataSnapshot.getValue(User.class)
     }
 
-    public User(String country, String city, String phone,String name) {
+    public User(String country, String city, String phone) {
         this.country = country;
         this.city = city;
         this.phone = phone;
