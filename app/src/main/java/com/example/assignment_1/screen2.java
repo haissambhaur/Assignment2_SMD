@@ -1,11 +1,11 @@
 package com.example.assignment_1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class screen2 extends AppCompatActivity {
 
@@ -25,6 +25,7 @@ public class screen2 extends AppCompatActivity {
                 // Start the new activity
                 startActivity(intent);
             }
+
         });
     }
 }

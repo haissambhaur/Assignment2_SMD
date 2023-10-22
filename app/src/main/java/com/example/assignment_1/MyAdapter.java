@@ -17,6 +17,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     private ArrayList<Items> items;
     private Context context;
 
+
     public MyAdapter(ArrayList<Items> items, Context context) {
         this.items = items;
         this.context = context;
